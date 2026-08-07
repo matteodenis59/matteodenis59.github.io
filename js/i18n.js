@@ -84,6 +84,7 @@ const translations = {
       p1desc1: "Minimisation de la traînée aérodynamique sur des prototypes de véhicules à l'échelle 1/25, via essais en soufflerie, simulations CFD et itérations CAO.",
       p1desc2: "Pilotage de la répartition des tâches, du développement du prototype et du suivi hebdomadaire pour une équipe de 8 étudiants.",
       p1tag1: "CFD", p1tag2: "Soufflerie", p1tag3: "CAO", p1tag4: "Leadership",
+      p1reportLabel: "Rapport (PDF)",
       p2title: "Dispositif de lévitation acoustique",
       p2meta: "École Centrale de Lille, en partenariat avec le laboratoire CNRS IEMN",
       p2desc1: "Conception et développement d'un système de lévitation acoustique sur 3 semestres académiques.",
@@ -106,7 +107,11 @@ const translations = {
       roleTitle: "Mon rôle",
       roleText: "En tant que chef de groupe, j'ai piloté la répartition des tâches entre les 8 membres de l'équipe, coordonné le développement du prototype et assuré un suivi hebdomadaire de l'avancement auprès de l'encadrement pédagogique.",
       skillsTitle: "Compétences mobilisées",
-      githubLabel: "Voir sur GitHub"
+      githubLabel: "Voir sur GitHub",
+      reportLabel: "Voir le rapport (PDF)",
+      reportTitle: "Rapport du projet",
+      reportText: "Le rapport complet du projet, incluant la méthodologie détaillée, les résultats des essais en soufflerie et des simulations CFD, est disponible ci-dessous.",
+      reportDownload: "Télécharger le PDF"
     },
     projectAcoustic: {
       back: "← Retour aux projets",
@@ -235,6 +240,7 @@ const translations = {
       p1desc1: "Minimised aerodynamic drag on 1/25-scale vehicle prototypes using wind-tunnel testing, CFD simulations and CAD iterations.",
       p1desc2: "Led task allocation, prototype development and weekly progress tracking for an 8-student team.",
       p1tag1: "CFD", p1tag2: "Wind Tunnel", p1tag3: "CAD", p1tag4: "Leadership",
+      p1reportLabel: "Report (PDF)",
       p2title: "Acoustic Levitation Device",
       p2meta: "École Centrale de Lille, in partnership with the CNRS laboratory IEMN",
       p2desc1: "Designed and developed an acoustic levitation system over 3 academic semesters.",
@@ -257,7 +263,11 @@ const translations = {
       roleTitle: "My role",
       roleText: "As group leader, I led task allocation across the 8-member team, coordinated prototype development and provided weekly progress updates to the teaching staff.",
       skillsTitle: "Skills used",
-      githubLabel: "View on GitHub"
+      githubLabel: "View on GitHub",
+      reportLabel: "View report (PDF)",
+      reportTitle: "Project report",
+      reportText: "The full project report, including the detailed methodology, wind-tunnel test results and CFD simulation results, is available below.",
+      reportDownload: "Download PDF"
     },
     projectAcoustic: {
       back: "← Back to projects",
