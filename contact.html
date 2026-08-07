@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mattéo Denis</title>
+<meta name="description" content="Contacter Mattéo Denis, étudiant ingénieur généraliste à Centrale Lille.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Mattéo Denis</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+      <li><a href="education.html" data-i18n="nav.education">Formation</a></li>
+      <li><a href="experience.html" data-i18n="nav.experience">Expérience</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projets</a></li>
+      <li><a href="skills.html" data-i18n="nav.skills">Compétences</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="assets/CV_Matteo_Denis.pdf" class="btn-cv" target="_blank" data-i18n="nav.cv">CV</a></li>
+      <li><button id="langToggle" class="lang-toggle" type="button">EN</button></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="page-eyebrow" data-i18n="contact.eyebrow">Parlons-en</p>
+      <h1 data-i18n="contact.title">Me contacter</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p data-i18n="contact.intro">
+            Vous souhaitez échanger à propos d'un stage, d'un projet ou simplement discuter
+            d'ingénierie ? N'hésitez pas à me contacter.
+          </p>
+          <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:matteo.denis@centrale.centralelille.fr">matteo.denis@centrale.centralelille.fr</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+33782975089">+33 (0)7 82 97 50 89</a></li>
+            <li><i class="fas fa-location-dot"></i> <span data-i18n="contact.location">Saint-Saulve, France</span></li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/matteo-denis1" target="_blank">linkedin.com/in/matteo-denis1</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/matteodenis59" target="_blank">github.com/matteodenis59</a></li>
+          </ul>
+          <div class="contact-actions">
+            <a href="mailto:matteo.denis@centrale.centralelille.fr" class="btn btn-primary" data-i18n="contact.emailBtn">Envoyer un e-mail</a>
+            <a href="https://www.linkedin.com/in/matteo-denis1" target="_blank" class="btn btn-outline" data-i18n="contact.linkedinBtn">Me contacter sur LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-name">Mattéo Denis</p>
+      <p class="footer-tag" data-i18n="footer.tag">Étudiant ingénieur généraliste — Centrale Lille</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/matteo-denis1" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/matteodenis59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:matteo.denis@centrale.centralelille.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy" data-i18n="footer.copy">© 2026 Mattéo Denis. Tous droits réservés.</p>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

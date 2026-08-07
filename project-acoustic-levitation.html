@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispositif de lévitation acoustique | Mattéo Denis</title>
+<meta name="description" content="Détail du projet de dispositif de lévitation acoustique, École Centrale de Lille en partenariat avec le CNRS IEMN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Mattéo Denis</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="about.html" data-i18n="nav.about">À propos</a></li>
+      <li><a href="education.html" data-i18n="nav.education">Formation</a></li>
+      <li><a href="experience.html" data-i18n="nav.experience">Expérience</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects" class="active">Projets</a></li>
+      <li><a href="skills.html" data-i18n="nav.skills">Compétences</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="assets/CV_Matteo_Denis.pdf" class="btn-cv" target="_blank" data-i18n="nav.cv">CV</a></li>
+      <li><button id="langToggle" class="lang-toggle" type="button">EN</button></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="project-detail-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="projects.html" data-i18n="projectAcoustic.back">← Retour aux projets</a></p>
+      <div class="project-icon"><i class="fas fa-atom"></i></div>
+      <h1 data-i18n="projectAcoustic.title">Dispositif de lévitation acoustique</h1>
+      <p class="project-detail-meta" data-i18n="projectAcoustic.meta">École Centrale de Lille, en partenariat avec le laboratoire CNRS IEMN · Sept. 2024 – Fév. 2026</p>
+      <div class="project-detail-actions">
+        <a href="https://github.com/matteodenis59" target="_blank" class="btn-github"><i class="fab fa-github"></i> <span data-i18n="projectAcoustic.githubLabel">Voir sur GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-detail-body">
+    <div class="container">
+      <div class="content-block">
+        <h2 data-i18n="projectAcoustic.overviewTitle">Aperçu du projet</h2>
+        <p data-i18n="projectAcoustic.overviewText">
+          Sur 3 semestres académiques, en partenariat avec le laboratoire CNRS IEMN, j'ai participé
+          à la conception et au développement d'un système de lévitation acoustique — un dispositif
+          utilisant des ondes ultrasonores pour faire léviter de petits objets sans contact physique.
+        </p>
+      </div>
+      <div class="content-block">
+        <h2 data-i18n="projectAcoustic.methodTitle">Démarche</h2>
+        <ul>
+          <li data-i18n="projectAcoustic.methodItem1">Recherche et compréhension des principes physiques de la lévitation par ondes acoustiques.</li>
+          <li data-i18n="projectAcoustic.methodItem2">Conception itérative du dispositif en lien avec les chercheurs du laboratoire IEMN.</li>
+          <li data-i18n="projectAcoustic.methodItem3">Tests et ajustements successifs sur plusieurs semestres pour améliorer la stabilité du système.</li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <h2 data-i18n="projectAcoustic.roleTitle">Mon rôle</h2>
+        <p data-i18n="projectAcoustic.roleText">
+          J'ai géré la coordination, la planification et les livrables d'une équipe de 8 étudiants
+          tout au long du projet, en assurant l'interface avec le laboratoire partenaire.
+        </p>
+      </div>
+      <div class="content-block">
+        <h2 data-i18n="projectAcoustic.skillsTitle">Compétences mobilisées</h2>
+        <div class="tags">
+          <span data-i18n="projects.p2tag1">Conception</span>
+          <span data-i18n="projects.p2tag2">R&D</span>
+          <span data-i18n="projects.p2tag3">Gestion de projet</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-name">Mattéo Denis</p>
+      <p class="footer-tag" data-i18n="footer.tag">Étudiant ingénieur généraliste — Centrale Lille</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/matteo-denis1" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/matteodenis59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:matteo.denis@centrale.centralelille.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy" data-i18n="footer.copy">© 2026 Mattéo Denis. Tous droits réservés.</p>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
