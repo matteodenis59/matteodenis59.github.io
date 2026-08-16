@@ -89,6 +89,10 @@ const translations = {
       p2desc1: "Conception et développement d'un système de lévitation acoustique sur 3 semestres académiques.",
       p2desc2: "Coordination, planification et gestion des livrables d'une équipe de 8 étudiants tout au long du projet.",
       p2tag1: "Conception", p2tag2: "R&D", p2tag3: "Gestion de projet",
+      p3title: "Conception et fabrication d'une éolienne tripale à axe vertical",
+      p3meta: "École Centrale de Lille · Projet de 8 semaines",
+      p3desc1: "Dimensionnement mécanique et aérodynamique, CAO, fabrication et essais en soufflerie d'une éolienne tripale à axe vertical.",
+      p3tag1: "Dimensionnement", p3tag2: "CAO", p3tag3: "Prototypage rapide", p3tag4: "Usinage", p3tag5: "Expérimentation",
       moreLink: "Voir le détail",
       githubLabel: "Voir sur GitHub"
     },
@@ -272,6 +276,10 @@ const translations = {
       p2desc1: "Designed and developed an acoustic levitation system over 3 academic semesters.",
       p2desc2: "Managed the coordination, planning and deliverables of an 8-student team across the project.",
       p2tag1: "Design", p2tag2: "R&D", p2tag3: "Project Management",
+      p3title: "Design and Manufacturing of a Three-Bladed Vertical-Axis Wind Turbine",
+      p3meta: "École Centrale de Lille · 8-week project",
+      p3desc1: "Mechanical and aerodynamic sizing, CAD, manufacturing and wind-tunnel testing of a three-bladed vertical-axis wind turbine.",
+      p3tag1: "Sizing", p3tag2: "CAD", p3tag3: "Rapid Prototyping", p3tag4: "Machining", p3tag5: "Experimentation",
       moreLink: "View details",
       githubLabel: "View on GitHub"
     },
