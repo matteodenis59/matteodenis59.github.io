@@ -83,7 +83,7 @@ const translations = {
       p1meta: "École Centrale de Lille · Challenge compétitif de 12 semaines · Chef de groupe",
       p1desc1: "Minimisation de la traînée aérodynamique sur des prototypes de véhicules à l'échelle 1/25, via essais en soufflerie, simulations CFD et itérations CAO.",
       p1desc2: "Pilotage de la répartition des tâches, du développement du prototype et du suivi hebdomadaire pour une équipe de 8 étudiants.",
-      p1tag1: "CFD", p1tag2: "Soufflerie", p1tag3: "CAO", p1tag4: "Leadership",
+      p1tag1: "CFD", p1tag2: "Expérimentation", p1tag3: "CAO", p1tag4: "Leadership",
       p2title: "Dispositif de lévitation acoustique",
       p2meta: "École Centrale de Lille, en partenariat avec le laboratoire CNRS IEMN",
       p2desc1: "Conception et développement d'un système de lévitation acoustique sur 3 semestres académiques.",
