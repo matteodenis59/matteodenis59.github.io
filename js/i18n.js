@@ -99,7 +99,7 @@ const translations = {
     projectDrag: {
       back: "← Retour aux projets",
       title: "Optimisation de traînée par contrôle d'écoulement",
-      meta: "École Centrale de Lille · Challenge compétitif de 12 semaines · Chef de groupe · Nov. 2025 – Jan. 2026",
+      meta: "École Centrale de Lille · Challenge compétitif de 12 semaines · Chef de groupe · Novembre 2025 – Janvier 2026",
       overviewTitle: "Aperçu du projet",
       overviewText: "Dans le cadre d'un challenge compétitif de 12 semaines à Centrale Lille, j'ai dirigé une équipe de 8 étudiants sur un projet de minimisation de la traînée aérodynamique. L'objectif : réduire la traînée sur des prototypes de véhicules à l'échelle 1/25 en combinant essais expérimentaux et simulation numérique.",
       methodTitle: "Démarche",
@@ -140,9 +140,9 @@ const translations = {
       methodTestTitle: "4. Essais en soufflerie et vision système",
       methodTestText1: "Le prototype final a été couplé à une génératrice et testé en soufflerie pour confronter les modèles théoriques à la réalité physique de l'écoulement.",
       captionTest: "Test du prototype final en soufflerie et analyse comparative des performances réelles vs théoriques.",
-      roleText: "En tant que chef de groupe, j'ai piloté la répartition des tâches entre les 8 membres de l'équipe, coordonné le développement du prototype et assuré un suivi hebdomadaire de l'avancement auprès de l'encadrement pédagogique.",
+      roleText: "En tant que responsable des pôles conception et fabrication, j'ai activement participé à la réalisation de la maquette numérique, à la mise en plan, aux différentes étapes d'usinage et d'impression 3D ainsi qu'à l'assemblage final de l'éolienne.",
       tag1: "Dimensionnement", tag2: "CAO", tag3: "Prototypage rapide", tag4: "Usinage",
-      reportText: "Les slides complètes de la soutenance finale, incluant la méthodologie détaillée, les résultats des simulations CFD et des essais en soufflerie, sont disponibles ci-dessous."
+      reportText: "Les slides de la soutenance finale, incluant la méthodologie détaillée, les choix techniques de conception et de fabrication, sont disponibles ci-dessous."
     },
     projectAcoustic: {
       back: "← Retour aux projets",
@@ -327,9 +327,9 @@ const translations = {
       methodTestTitle: "4. Wind-Tunnel Testing and System Validation",
       methodTestText1: "The final prototype was coupled to a generator and tested in the wind tunnel to compare theoretical models with actual flow behaviour.",
       captionTest: "Testing the final prototype in the wind tunnel and comparing real vs theoretical performance.",
-      roleText: "As group leader, I led task allocation across the 8-member team, coordinated prototype development and provided weekly progress updates to the teaching staff.",
+      roleText: "As lead for the design and manufacturing workstreams, I actively contributed to the digital mock-up, the technical drawings, the various machining and 3D-printing steps, and the final assembly of the wind turbine.",
       tag1: "Sizing", tag2: "CAD", tag3: "Rapid Prototyping", tag4: "Machining",
-      reportText: "The full final defence slides, including the detailed methodology and the results of the CFD simulations and wind-tunnel tests, are available below."
+      reportText: "The final defence slides, including the detailed methodology and the key design and manufacturing choices, are available below."
     },
     projectAcoustic: {
       back: "← Back to projects",
