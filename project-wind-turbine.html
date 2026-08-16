@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conception et fabrication d'une éolienne tripale à axe vertical | Mattéo Denis</title>
+<meta name="description" content="Détail du projet de conception et de fabrication d'une éolienne tripale à axe vertical, École Centrale de Lille.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    }
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" id="MathJax-script" async></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Mattéo Denis</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects" class="active">Projets</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="assets/CV_Matteo_Denis.pdf" class="btn-cv" target="_blank" data-i18n="nav.cv">CV</a></li>
+      <li><button id="langToggle" class="lang-toggle" type="button">EN</button></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="project-detail-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="projects.html" data-i18n="projectDrag.back">← Retour aux projets</a></p>
+      <div class="project-icon"><i class="fas fa-wind"></i></div>
+      <h1 data-i18n="projectEolienne.title">Conception et fabrication d'une éolienne tripale à axe vertical</h1>
+      <p class="project-detail-meta" data-i18n="projectEolienne.meta">École Centrale de Lille · Projet de 8 semaines · Septembre 2025 – Novembre 2025</p>
+      <div class="project-detail-actions">
+        <a href="assets/soutenance-eolienne.pdf" target="_blank" class="btn-github"><i class="fas fa-file-pdf"></i> <span data-i18n="projectEolienne.reportLabel">Voir les slides de la soutenance finale (PDF)</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-detail-body">
+    <div class="container">
+
+      <div class="content-block content-with-image">
+        <div>
+          <h2 data-i18n="projectDrag.overviewTitle">Aperçu du projet</h2>
+          <p>
+            Dans le cadre de l'Electif d'Intégration <i><a href="https://syllabus.centralelille.fr/fr/26_27/fiche/27366350" target="_blank" class="text-link">Approche énergétique et transmission de puissance</a></i>, ce projet mettait en concurrence 4 équipes de 8 étudiants avec pour but la réalisation d'une éolienne la plus puissante possible en respectant un cahier des charges défini.
+            <br><br>
+            L'objectif technique était de concevoir, modéliser, fabriquer et tester en soufflerie un prototype d'éolienne à axe vertical capable de fournir une puissance mécanique d'au moins 10 W pour une vitesse de vent nominale de 8 m/s.
+            <br><br>
+            La particularité de cette architecture réside dans sa cinématique. En effet, afin d'optimiser l'angle d'incidence, les trois pales de l'éolienne s'orientent continuellement face au vent et ne réalisent qu'un demi-tour lorsque l'éolienne en réalise un complet.
+          </p>
+        </div>
+        <img src="images/CAO_eolienne.png" alt="Photo du prototype initial" class="content-image">
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="projectEolienne.methodTitle">Démarche</h2>
+
+        <!-- 1. MODÉLISATION AÉRODYNAMIQUE -->
+        <div class="method-step">
+          <h3 data-i18n="projectEolienne.methodAeroTitle">1. Modélisation aérodynamique</h3>
+
+          <div class="method-substep-with-image">
+            <div>
+              <h4 data-i18n="projectEolienne.methodAeroSubtitle1">Optimisation analytique du cycle (Python)</h4>
+              <p data-i18n="projectEolienne.methodAeroText1">Afin de maximiser l'extraction d'énergie, le pôle aérodynamique a développé un modèle Python évaluant le coefficient de puissance Cp en fonction de l'angle d'incidence des pales, du facteur d'induction axiale et du ratio de vitesse spécifique.</p>
+              <ul>
+                <li data-i18n="projectEolienne.methodAeroItem1a"><strong>Choix cinématique :</strong> le modèle a démontré qu'une rotation des pales dans le sens inverse de l'axe central permettait de minimiser l'angle d'incidence et d'éviter un décrochage prématuré.</li>
+                <li data-i18n="projectEolienne.methodAeroItem1b"><strong>Dimensionnement global :</strong> l'algorithme a permis d'isoler les paramètres optimaux du rotor : un rayon R=140 mm, une demi-envergure de pale b=120 mm, un facteur a=0.072 et un λopt=0.486.</li>
+              </ul>
+            </div>
+            <figure class="project-image-container">
+              <img src="images/cp_lambda.png" alt="Graphique Python Cp vs Lambda" class="content-image">
+              <figcaption data-i18n="projectEolienne.captionPython">Comparaison des Cp selon les profils de pales.</figcaption>
+            </figure>
+          </div>
+
+          <div class="method-substep-with-image">
+            <div>
+              <h4 data-i18n="projectEolienne.methodAeroSubtitle2">Simulations numériques (STAR-CCM+)</h4>
+              <p data-i18n="projectEolienne.methodAeroText2">Pour valider le profil des pales, plusieurs géométries (profils constants, profils NACA 15 et 18, profils affinés) ont été testées en CFD.</p>
+              <ul>
+                <li data-i18n="projectEolienne.methodAeroItem2a"><strong>Maillage :</strong> étude de convergence en maillage validée à 1,7 million de cellules, avec un y+ rigoureusement contrôlé pour capturer la couche limite.</li>
+                <li data-i18n="projectEolienne.methodAeroItem2b"><strong>Résultats :</strong> le choix final s'est porté sur le profil "16_4" (épaisseur de 16 mm au centre s'affinant à 4 mm aux bords). Ce design offre un décrochage retardé à 11° et le meilleur rendement aérodynamique (Cp=0.31).</li>
+              </ul>
+            </div>
+            <figure class="project-image-container">
+              <img src="images/CFD_pale.png" alt="Simulation CFD d'une pale" class="content-image">
+              <figcaption data-i18n="projectEolienne.captionCFD">Cartographie des vitesses et de la pression (STAR-CCM+) autour du profil de la pale 16_4 optimisée.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 2. CONCEPTION MÉCANIQUE -->
+        <div class="method-step">
+          <h3 data-i18n="projectEolienne.methodMecaTitle">2. Conception mécanique et dimensionnement (CAO)</h3>
+
+          <div class="method-substep-with-image">
+            <div>
+              <h4 data-i18n="projectEolienne.methodMecaSubtitle1">Calculs de Résistance des Matériaux (RDM)</h4>
+              <p data-i18n="projectEolienne.methodMecaText1">Les bras de maintien des pales (section 10x30x140 mm en PLA) ont été dimensionnés pour résister aux différentes contraintes mécaniques en fonctionnement.</p>
+              <ul>
+                <li data-i18n="projectEolienne.methodMecaItem1a"><strong>Tenue en flexion :</strong> simulation sous RdM Le Mans avec une force verticale de 60 N vers le bas (représentant le poids majoré d'un ensemble pale/axe de 600 g).</li>
+                <li data-i18n="projectEolienne.methodMecaItem1b"><strong>Efforts centrifuges :</strong> calcul analytique de la force radiale exercée par la pale en rotation nominale (F = mRΩ²/2 = 38,7 N) puis simulation sous RDM Le Mans</li>
+                <li data-i18n="projectEolienne.methodMecaItem1c"><strong>Validation matière :</strong> la contrainte maximale relevée est de 0,06 MPa (pour une limite élastique du PLA à 50 MPa), validant l'absence de déformation plastique (taux de déformation de 4.10⁻⁴ %).</li>
+              </ul>
+            </div>
+            <figure class="project-image-container">
+              <img src="images/RDM_bras.png" alt="Simulation RDM en flexion du bras de maintien" class="content-image">
+              <figcaption data-i18n="projectEolienne.captionRDM">Simulation de flexion sur les bras de maintien sous RDM Le Mans (force verticale de 60 N).</figcaption>
+            </figure>
+          </div>
+
+          <div>
+              <h4 data-i18n="projectEolienne.methodMecaSubtitle2">Architecture cinématique et Liaisons</h4>
+              <p data-i18n="projectEolienne.methodMecaText2">La transmission du mouvement (rapport de réduction de 1/2) est assurée par un train d'engrenages coniques (10 et 42 dents), privilégié aux courroies pour sa robustesse et l'absence de glissement. L'ensemble a été modélisé sous Onshape.</p>
+              <ul>
+                <li data-i18n="projectEolienne.methodMecaItem2a"><strong>Axe principal :</strong> guidage par deux roulements à billes montés en "X" (entretoise centrale, écrou à encoches) avec un ajustement de précision H7/m6.</li>
+                <li data-i18n="projectEolienne.methodMecaItem2b"><strong>Axes des pales :</strong> montage en "O", avec bagues extérieures montées serrées dans les moyeux en PLA, verrouillées par des anneaux élastiques.</li>
+              </ul>
+          </div>
+        </div>
+        <!-- 3. INDUSTRIALISATION ET FABRICATION -->
+        <div class="method-step">
+          <h3 data-i18n="projectEolienne.methodManufTitle">3. Industrialisation et prototypage</h3>
+
+          <div>
+              <p data-i18n="projectEolienne.methodManufText1">Le projet a été mené jusqu'à la fabrication physique complète en atelier, en croisant plusieurs procédés pour s'adapter aux différents matériaux :</p>
+              <ul>
+                <li data-i18n="projectEolienne.methodManufItem1a"><strong>Tournage et Fraisage :</strong> usinage des axes principaux et des stubs de pales en acier (chariotage, rainurage pour circlips, dressage) et réalisation des méplats pour assurer le blocage en rotation des engrenages.</li>
+                <li data-i18n="projectEolienne.methodManufItem1b"><strong>Découpe Jet d'Eau :</strong> découpe de haute précision des disques de la base en aluminium.</li>
+                <li data-i18n="projectEolienne.methodManufItem1c"><strong>Impression 3D :</strong> fabrication des bras profilés et des engrenages coniques en PLA.</li>
+              </ul>
+          </div>
+        </div>
+
+        <!-- 4. ESSAIS ET VALIDATION -->
+        <div class="method-step">
+          <h3 data-i18n="projectEolienne.methodTestTitle">4. Essais en soufflerie et vision système</h3>
+
+          <div>
+              <p data-i18n="projectEolienne.methodTestText1">Le prototype final a été couplé à une génératrice et testé en soufflerie pour confronter les modèles théoriques à la réalité physique de l'écoulement.</p>
+              <ul>
+                <li data-i18n="projectEolienne.methodTestItem1a"><strong>Validation des profils :</strong> les essais physiques ont confirmé les simulations CFD, la pale "16_4" surpassant les autres profils en maintenant un Cp plus élevé sur une large plage de fonctionnement.</li>
+                <li data-i18n="projectEolienne.methodTestItem1b"><strong>Analyse des écarts :</strong> les pertes mécaniques (liées aux frottements des roulements et de l'engrènement) ont été modélisées et estimées entre 15 et 20 % de la puissance fluide captée.</li>
+                <li data-i18n="projectEolienne.methodTestItem1c"><strong>Performance finale :</strong> à la vitesse nominale, l'arbre délivre une puissance mécanique de 12,25 W, validant ainsi avec succès le cahier des charges initial imposant une puissance supérieure à 10 W.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="projectDrag.roleTitle">Mon rôle</h2>
+        <p data-i18n="projectEolienne.roleText">
+          En tant que chef de groupe, j'ai piloté la répartition des tâches entre les 8 membres de
+          l'équipe, coordonné le développement du prototype et assuré un suivi hebdomadaire de
+          l'avancement auprès de l'encadrement pédagogique.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="projectDrag.skillsTitle">Compétences mobilisées</h2>
+        <div class="tags">
+          <span data-i18n="projectEolienne.tag1">CFD</span>
+          <span data-i18n="projectEolienne.tag2">Expérimentation</span>
+          <span data-i18n="projectEolienne.tag3">CAO</span>
+          <span data-i18n="projectEolienne.tag4">Leadership</span>
+        </div>
+      </div>
+
+      <div class="content-block wide">
+        <h2 data-i18n="projectDrag.teamTitle">Équipe du projet</h2>
+        <div class="team-grid">
+          <a href="https://www.linkedin.com/in/guilhem-aublant-230902328/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/guilhem-aublant.jpg" alt="Photo de Guilhem AUBLANT">
+            <p class="team-name">Guilhem AUBLANT</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arthur-benoit-977b91333/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/arthur-benoit.jpg" alt="Photo de Arthur BENOIT">
+            <p class="team-name">Arthur BENOIT</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mathias-bonnet-43981b329/" target="_blank" class="team-card">
+            <div class="team-avatar">MB</div>
+            <p class="team-name">Mathias BONNET</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/marius-bridonneau-46584b328" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/marius-bridonneau.jpg" alt="Photo de Marius BRIDONNEAU">
+            <p class="team-name">Marius BRIDONNEAU</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/charles-duez-7172b2333/" target="_blank" class="team-card">
+            <div class="team-avatar">CD</div>
+            <p class="team-name">Charles DUEZ</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/yuzhe-li-8b3793340/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/yuzhe-li.jpg" alt="Yuzhe LI">
+            <p class="team-name">Yuzhe LI</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mathis-wirquin-0a4a94329/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/mathis-wirquin.jpg" alt="Photo de Mathis WIRQUIN">
+            <p class="team-name">Mathis WIRQUIN</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="content-block wide">
+        <h2 data-i18n="projectDrag.reportTitle">Rapport du projet</h2>
+        <p data-i18n="projectEolienne.reportText">
+          Les slides complètes de la soutenance finale, incluant la méthodologie détaillée, les
+          résultats des simulations CFD et des essais en soufflerie, sont disponibles ci-dessous.
+        </p>
+        <div class="pdf-embed">
+          <iframe src="assets/soutenance-eolienne.pdf" title="Soutenance - Éolienne tripale à axe vertical"></iframe>
+        </div>
+        <a href="assets/soutenance-eolienne.pdf" download class="btn btn-outline pdf-download">
+          <i class="fas fa-download"></i> <span data-i18n="projectDrag.reportDownload">Télécharger le PDF</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-name">Mattéo Denis</p>
+      <p class="footer-tag" data-i18n="footer.tag">Étudiant ingénieur généraliste — Centrale Lille</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/matteo-denis1" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/matteodenis59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:matteo.denis@centrale.centralelille.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy" data-i18n="footer.copy">© 2026 Mattéo Denis. Tous droits réservés.</p>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
