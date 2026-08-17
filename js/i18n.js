@@ -289,6 +289,7 @@ const translations = {
       meta: "École Centrale de Lille · 12-week competitive challenge · Group Leader · Nov. 2025 – Jan. 2026",
       overviewTitle: "Project overview",
       overviewText: "As part of a 12-week competitive challenge at Centrale Lille, I led a team of 8 students on a drag-minimisation project. The goal: reduce aerodynamic drag on 1/25-scale vehicle prototypes by combining experimental testing with numerical simulation.",
+      captionProto: "Prototype de base utilisé lors du challenge",
       methodTitle: "Approach",
       methodItem1: "Wind-tunnel testing to measure the aerodynamic performance of prototypes.",
       methodItem2: "CFD simulations to analyse and predict airflow before manufacturing.",
