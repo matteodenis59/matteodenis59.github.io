@@ -66,7 +66,7 @@
             La particularité de cette architecture réside dans sa cinématique. En effet, afin d'optimiser l'angle d'incidence, les trois pales de l'éolienne s'orientent continuellement face au vent et ne réalisent qu'un demi-tour lorsque l'éolienne en réalise un complet.
           </p>
         </div>
-        <img src="images/CAO_eolienne.png" alt="Photo du prototype initial" class="content-image">
+        <img src="images/Eolienne.jpg" alt="Photo du prototype initial" class="content-image">
       </div>
 
       <div class="content-block">
@@ -81,8 +81,8 @@
               <h4 data-i18n="projectEolienne.methodAeroSubtitle1">Optimisation analytique du cycle (Python)</h4>
               <p data-i18n="projectEolienne.methodAeroText1">Afin de maximiser l'extraction d'énergie, le pôle aérodynamique a développé un modèle Python évaluant le coefficient de puissance Cp en fonction de l'angle d'incidence des pales, du facteur d'induction axiale et du ratio de vitesse spécifique.</p>
               <ul>
-                <li data-i18n="projectEolienne.methodAeroItem1a"><strong>Choix cinématique :</strong> le modèle a démontré qu'une rotation des pales dans le sens inverse de l'axe central permettait de minimiser l'angle d'incidence et d'éviter un décrochage prématuré.</li>
-                <li data-i18n="projectEolienne.methodAeroItem1b"><strong>Dimensionnement global :</strong> l'algorithme a permis d'isoler les paramètres optimaux du rotor : un rayon R=140 mm, une demi-envergure de pale b=120 mm, un facteur a=0.072 et un λopt=0.486.</li>
+                <li data-i18n-html="projectEolienne.methodAeroItem1a"><strong>Choix cinématique :</strong> le modèle a démontré qu'une rotation des pales dans le sens inverse de l'axe central permettait de minimiser l'angle d'incidence et d'éviter un décrochage prématuré.</li>
+                <li data-i18n-html="projectEolienne.methodAeroItem1b"><strong>Dimensionnement global :</strong> l'algorithme a permis d'isoler les paramètres optimaux du rotor : un rayon R=140 mm, une demi-envergure de pale b=120 mm, un facteur a=0.072 et un λopt=0.486.</li>
               </ul>
             </div>
             <figure class="project-image-container">
@@ -96,8 +96,8 @@
               <h4 data-i18n="projectEolienne.methodAeroSubtitle2">Simulations numériques (STAR-CCM+)</h4>
               <p data-i18n="projectEolienne.methodAeroText2">Pour valider le profil des pales, plusieurs géométries (profils constants, profils NACA 15 et 18, profils affinés) ont été testées en CFD.</p>
               <ul>
-                <li data-i18n="projectEolienne.methodAeroItem2a"><strong>Maillage :</strong> étude de convergence en maillage validée à 1,7 million de cellules, avec un y+ rigoureusement contrôlé pour capturer la couche limite.</li>
-                <li data-i18n="projectEolienne.methodAeroItem2b"><strong>Résultats :</strong> le choix final s'est porté sur le profil "16_4" (épaisseur de 16 mm au centre s'affinant à 4 mm aux bords). Ce design offre un décrochage retardé à 11° et le meilleur rendement aérodynamique (Cp=0.31).</li>
+                <li data-i18n-html="projectEolienne.methodAeroItem2a"><strong>Maillage :</strong> étude de convergence en maillage validée à 1,7 million de cellules, avec un y+ rigoureusement contrôlé pour capturer la couche limite.</li>
+                <li data-i18n-html="projectEolienne.methodAeroItem2b"><strong>Résultats :</strong> le choix final s'est porté sur le profil "16_4" (épaisseur de 16 mm au centre s'affinant à 4 mm aux bords). Ce design offre un décrochage retardé à 11° et le meilleur rendement aérodynamique (Cp=0.31).</li>
               </ul>
             </div>
             <figure class="project-image-container">
@@ -116,9 +116,9 @@
               <h4 data-i18n="projectEolienne.methodMecaSubtitle1">Calculs de Résistance des Matériaux (RDM)</h4>
               <p data-i18n="projectEolienne.methodMecaText1">Les bras de maintien des pales (section 10x30x140 mm en PLA) ont été dimensionnés pour résister aux différentes contraintes mécaniques en fonctionnement.</p>
               <ul>
-                <li data-i18n="projectEolienne.methodMecaItem1a"><strong>Tenue en flexion :</strong> simulation sous RdM Le Mans avec une force verticale de 60 N vers le bas (représentant le poids majoré d'un ensemble pale/axe de 600 g).</li>
-                <li data-i18n="projectEolienne.methodMecaItem1b"><strong>Efforts centrifuges :</strong> calcul analytique de la force radiale exercée par la pale en rotation nominale (F = mRΩ²/2 = 38,7 N) puis simulation sous RDM Le Mans</li>
-                <li data-i18n="projectEolienne.methodMecaItem1c"><strong>Validation matière :</strong> la contrainte maximale relevée est de 0,06 MPa (pour une limite élastique du PLA à 50 MPa), validant l'absence de déformation plastique (taux de déformation de 4.10⁻⁴ %).</li>
+                <li data-i18n-html="projectEolienne.methodMecaItem1a"><strong>Tenue en flexion :</strong> simulation sous RdM Le Mans avec une force verticale de 60 N vers le bas (représentant le poids majoré d'un ensemble pale/axe de 600 g).</li>
+                <li data-i18n-html="projectEolienne.methodMecaItem1b"><strong>Efforts centrifuges :</strong> calcul analytique de la force radiale exercée par la pale en rotation nominale (F = mRΩ²/2 = 38,7 N) puis simulation sous RDM Le Mans</li>
+                <li data-i18n-html="projectEolienne.methodMecaItem1c"><strong>Validation matière :</strong> la contrainte maximale relevée est de 0,06 MPa (pour une limite élastique du PLA à 50 MPa), validant l'absence de déformation plastique (taux de déformation de 4.10⁻⁴ %).</li>
               </ul>
             </div>
             <figure class="project-image-container">
@@ -131,8 +131,8 @@
               <h4 data-i18n="projectEolienne.methodMecaSubtitle2">Architecture cinématique et Liaisons</h4>
               <p data-i18n="projectEolienne.methodMecaText2">La transmission du mouvement (rapport de réduction de 1/2) est assurée par un train d'engrenages coniques (10 et 42 dents), privilégié aux courroies pour sa robustesse et l'absence de glissement. L'ensemble a été modélisé sous Onshape.</p>
               <ul>
-                <li data-i18n="projectEolienne.methodMecaItem2a"><strong>Axe principal :</strong> guidage par deux roulements à billes montés en "X" (entretoise centrale, écrou à encoches) avec un ajustement de précision H7/m6.</li>
-                <li data-i18n="projectEolienne.methodMecaItem2b"><strong>Axes des pales :</strong> montage en "O", avec bagues extérieures montées serrées dans les moyeux en PLA, verrouillées par des anneaux élastiques.</li>
+                <li data-i18n-html="projectEolienne.methodMecaItem2a"><strong>Axe principal :</strong> guidage par deux roulements à billes montés en "X" (entretoise centrale, écrou à encoches) avec un ajustement de précision H7/m6.</li>
+                <li data-i18n-html="projectEolienne.methodMecaItem2b"><strong>Axes des pales :</strong> montage en "O", avec bagues extérieures montées serrées dans les moyeux en PLA, verrouillées par des anneaux élastiques.</li>
               </ul>
           </div>
         </div>
@@ -143,9 +143,9 @@
           <div>
               <p data-i18n="projectEolienne.methodManufText1">Le projet a été mené jusqu'à la fabrication physique complète en atelier, en croisant plusieurs procédés pour s'adapter aux différents matériaux :</p>
               <ul>
-                <li data-i18n="projectEolienne.methodManufItem1a"><strong>Tournage et Fraisage :</strong> usinage des axes principaux et des stubs de pales en acier (chariotage, rainurage pour circlips, dressage) et réalisation des méplats pour assurer le blocage en rotation des engrenages.</li>
-                <li data-i18n="projectEolienne.methodManufItem1b"><strong>Découpe Jet d'Eau :</strong> découpe de haute précision des disques de la base en aluminium.</li>
-                <li data-i18n="projectEolienne.methodManufItem1c"><strong>Impression 3D :</strong> fabrication des bras profilés et des engrenages coniques en PLA.</li>
+                <li data-i18n-html="projectEolienne.methodManufItem1a"><strong>Tournage et Fraisage :</strong> usinage des axes principaux et des stubs de pales en acier (chariotage, rainurage pour circlips, dressage) et réalisation des méplats pour assurer le blocage en rotation des engrenages.</li>
+                <li data-i18n-html="projectEolienne.methodManufItem1b"><strong>Découpe Jet d'Eau :</strong> découpe de haute précision des disques de la base en aluminium.</li>
+                <li data-i18n-html="projectEolienne.methodManufItem1c"><strong>Impression 3D :</strong> fabrication des bras profilés et des engrenages coniques en PLA.</li>
               </ul>
           </div>
         </div>
@@ -157,9 +157,9 @@
           <div>
               <p data-i18n="projectEolienne.methodTestText1">Le prototype final a été couplé à une génératrice et testé en soufflerie pour confronter les modèles théoriques à la réalité physique de l'écoulement.</p>
               <ul>
-                <li data-i18n="projectEolienne.methodTestItem1a"><strong>Validation des profils :</strong> les essais physiques ont confirmé les simulations CFD, la pale "16_4" surpassant les autres profils en maintenant un Cp plus élevé sur une large plage de fonctionnement.</li>
-                <li data-i18n="projectEolienne.methodTestItem1b"><strong>Analyse des écarts :</strong> les pertes mécaniques (liées aux frottements des roulements et de l'engrènement) ont été modélisées et estimées entre 15 et 20 % de la puissance fluide captée.</li>
-                <li data-i18n="projectEolienne.methodTestItem1c"><strong>Performance finale :</strong> à la vitesse nominale, l'arbre délivre une puissance mécanique de 12,25 W, validant ainsi avec succès le cahier des charges initial imposant une puissance supérieure à 10 W.</li>
+                <li data-i18n-html="projectEolienne.methodTestItem1a"><strong>Validation des profils :</strong> les essais physiques ont confirmé les simulations CFD, la pale "16_4" surpassant les autres profils en maintenant un Cp plus élevé sur une large plage de fonctionnement.</li>
+                <li data-i18n-html="projectEolienne.methodTestItem1b"><strong>Analyse des écarts :</strong> les pertes mécaniques (liées aux frottements des roulements et de l'engrènement) ont été modélisées et estimées entre 15 et 20 % de la puissance fluide captée.</li>
+                <li data-i18n-html="projectEolienne.methodTestItem1c"><strong>Performance finale :</strong> à la vitesse nominale, l'arbre délivre une puissance mécanique de 12,25 W, validant ainsi avec succès le cahier des charges initial imposant une puissance supérieure à 10 W.</li>
               </ul>
           </div>
         </div>
