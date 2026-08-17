@@ -101,8 +101,8 @@ const translations = {
       title: "Optimisation de traînée par contrôle d'écoulement",
       meta: "École Centrale de Lille · Challenge compétitif de 12 semaines · Chef de groupe · Novembre 2025 – Janvier 2026",
       overviewTitle: "Aperçu du projet",
-      overviewText: "Dans le cadre d'un challenge compétitif de 12 semaines à Centrale Lille, j'ai dirigé une équipe de 8 étudiants sur un projet de minimisation de la traînée aérodynamique. L'objectif : réduire la traînée sur des prototypes de véhicules à l'échelle 1/25 en combinant essais expérimentaux et simulation numérique.",
-      captionProto: "Prototype de base utilisé lors du challenge",
+      overviewText: `Dans le cadre de l'Electif d'Intégration <i><a href="https://syllabus.centralelille.fr/fr/26_27/fiche/27366524" target="_blank" class="text-link">Biomimetic Flow Control</a></i>, ce challenge opposait 4 équipes de 8 étudiants, chacune encadrée par un enseignant-chercheur (ou post-doctorant).<br><br>L'objectif : réduire la traînée aérodynamique de prototypes de véhicules (SUV et berline) à l'échelle 1/25 en combinant essais expérimentaux et simulations numériques.`,
+      captionProto: "Prototype de base utilisé lors du challenge.",
       methodTitle: "Démarche",
       methodItem1: "Essais en soufflerie pour mesurer les performances aérodynamiques des prototypes.",
       methodItem2: "Simulations CFD pour analyser et prédire les écoulements avant fabrication.",
@@ -119,7 +119,7 @@ const translations = {
     projectEolienne: {
       title: "Conception et fabrication d'une éolienne tripale à axe vertical",
       meta: "École Centrale de Lille · Projet de 8 semaines · Septembre 2025 – Novembre 2025",
-      overviewText: "",
+      overviewText: `Dans le cadre de l'Electif d'Intégration <i><a href="https://syllabus.centralelille.fr/fr/26_27/fiche/27366350" target="_blank" class="text-link">Approche énergétique et transmission de puissance</a></i>, ce projet mettait en concurrence 4 équipes de 8 étudiants avec pour but la réalisation d'une éolienne la plus puissante possible en respectant un cahier des charges défini.<br><br>L'objectif technique était de concevoir, modéliser, fabriquer et tester en soufflerie un prototype d'éolienne à axe vertical capable de fournir une puissance mécanique d'au moins 10 W pour une vitesse de vent nominale de 8 m/s.<br><br>La particularité de cette architecture réside dans sa cinématique. En effet, afin d'optimiser l'angle d'incidence, les trois pales de l'éolienne s'orientent continuellement face au vent et ne réalisent qu'un demi-tour lorsque l'éolienne en réalise un complet.`,
       reportLabel: "Voir les slides de la soutenance finale (PDF)",
       methodTitle: "Démarche",
       methodAeroTitle: "1. Modélisation aérodynamique",
@@ -290,7 +290,7 @@ const translations = {
       title: "Drag Optimisation by Flow Control",
       meta: "École Centrale de Lille · 12-week competitive challenge · Group Leader · Nov. 2025 – Jan. 2026",
       overviewTitle: "Project overview",
-      overviewText: "As part of a 12-week competitive challenge at Centrale Lille, I led a team of 8 students on a drag-minimisation project. The goal: reduce aerodynamic drag on 1/25-scale vehicle prototypes by combining experimental testing with numerical simulation.",
+      overviewText: `As part of the Elective <i><a href="https://syllabus.centralelille.fr/fr/26_27/fiche/27366524" target="_blank" class="text-link">Biomimetic Flow Control</a></i>, this challenge pitted 4 teams of 8 students against each other, each supervised by a research professor (or postdoctoral researcher).<br><br>The goal: reduce the aerodynamic drag of 1/25-scale vehicle prototypes (SUV and sedan) by combining experimental testing with numerical simulation.`,
       captionProto: "Base prototype used during the challenge.",
       methodTitle: "Approach",
       methodItem1: "Wind-tunnel testing to measure the aerodynamic performance of prototypes.",
@@ -308,6 +308,7 @@ const translations = {
     projectEolienne: {
       title: "Design and Manufacturing of a Three-Bladed Vertical-Axis Wind Turbine",
       meta: "École Centrale de Lille · 8-week project · September 2025 – November 2025",
+      overviewText: `As part of the Elective <i><a href="https://syllabus.centralelille.fr/fr/26_27/fiche/27366350" target="_blank" class="text-link">Energy Approach and Power Transmission</a></i>, this project pitted 4 teams of 8 students against each other, with the goal of building the most powerful wind turbine possible within a defined set of specifications.<br><br>The technical objective was to design, model, manufacture and wind-tunnel test a vertical-axis wind turbine prototype capable of delivering at least 10 W of mechanical power at a nominal wind speed of 8 m/s.<br><br>The distinctive feature of this architecture lies in its kinematics. To optimise the angle of incidence, the turbine's three blades continuously orient themselves to face the wind, completing only a half-turn for every full turn of the turbine.`,
       reportLabel: "View the final defence slides (PDF)",
       methodTitle: "Approach",
       methodAeroTitle: "1. Aerodynamic Modelling",
@@ -389,6 +390,11 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const value = getNested(dict, el.getAttribute('data-i18n'));
     if (value !== null) el.textContent = value;
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const value = getNested(dict, el.getAttribute('data-i18n-html'));
+    if (value !== null) el.innerHTML = value;
   });
 
   const toggleBtn = document.getElementById('langToggle');
