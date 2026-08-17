@@ -29,7 +29,6 @@
       <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
       <li><a href="projects.html" data-i18n="nav.projects" class="active">Projets</a></li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-      <li><a href="assets/CV_Matteo_Denis.pdf" class="btn-cv" target="_blank" data-i18n="nav.cv">CV</a></li>
       <li><button id="langToggle" class="lang-toggle" type="button">EN</button></li>
     </ul>
     <button class="burger" id="burger" aria-label="Menu">
@@ -66,7 +65,10 @@
             La particularité de cette architecture réside dans sa cinématique. En effet, afin d'optimiser l'angle d'incidence, les trois pales de l'éolienne s'orientent continuellement face au vent et ne réalisent qu'un demi-tour lorsque l'éolienne en réalise un complet.
           </p>
         </div>
-        <img src="images/Eolienne.jpg" alt="Photo du prototype initial" class="content-image">
+        <figure class="project-image-container">
+          <img src="images/Eolienne.jpg" alt="Prototype final" class="content-image">
+          <figcaption data-i18n="projectEolienne.captionProto">Photo du prototype final.</figcaption>
+        </figure>
       </div>
 
       <div class="content-block">
@@ -127,14 +129,19 @@
             </figure>
           </div>
 
+          <div class="method-substep-with-image">
           <div>
-              <h4 data-i18n="projectEolienne.methodMecaSubtitle2">Architecture cinématique et Liaisons</h4>
-              <p data-i18n="projectEolienne.methodMecaText2">La transmission du mouvement (rapport de réduction de 1/2) est assurée par un train d'engrenages coniques (10 et 42 dents), privilégié aux courroies pour sa robustesse et l'absence de glissement. L'ensemble a été modélisé sous Onshape.</p>
-              <ul>
-                <li data-i18n-html="projectEolienne.methodMecaItem2a"><strong>Axe principal :</strong> guidage par deux roulements à billes montés en "X" (entretoise centrale, écrou à encoches) avec un ajustement de précision H7/m6.</li>
-                <li data-i18n-html="projectEolienne.methodMecaItem2b"><strong>Axes des pales :</strong> montage en "O", avec bagues extérieures montées serrées dans les moyeux en PLA, verrouillées par des anneaux élastiques.</li>
-              </ul>
+            <h4 data-i18n="projectEolienne.methodMecaSubtitle2">Architecture cinématique et Liaisons</h4>
+            <p data-i18n="projectEolienne.methodMecaText2">La transmission du mouvement (rapport de réduction global de 1/2) est assurée par un train d'engrenages concourants imprimé en 3D (dents droites, roues de 10, 20 et 42 dents). La liaison encastrement sur les axes est réalisée par des vis de pression sur méplat avec inserts métalliques. Cette cinématique a été privilégiée aux courroies pour sa robustesse et l'absence de glissement.</p>
+            <ul>
+              <li data-i18n-html="projectEolienne.methodMecaItem2a"><strong>Axe principal :</strong> guidage par deux roulements à billes montés en "X" (entretoise centrale, écrou à encoches) avec un ajustement de précision H7/m6.</li>
+              <li data-i18n-html="projectEolienne.methodMecaItem2b"><strong>Axes des pales (moyeu tournant) :</strong> guidage par roulements rigides à billes. Les bagues extérieures sont montées serrées dans les moyeux en PLA. Les bagues intérieures sont montées glissantes sur l'axe fixe, l'ensemble étant bloqué par une entretoise et des anneaux élastiques.</li>
+            </ul>
           </div>
+          <figure class="project-image-container">
+            <img src="images/guidage_axe.png" alt="Guidage de l'axe principal" class="content-image">
+            <figcaption data-i18n="projectEolienne.guidageAxe">Vue en coupe du bâti montrant le montage en X pour l'axe principal.</figcaption>
+          </figure>
         </div>
         <!-- 3. INDUSTRIALISATION ET FABRICATION -->
         <div class="method-step">
@@ -145,7 +152,7 @@
               <p data-i18n="projectEolienne.methodManufText1">Le projet a été mené jusqu'à la fabrication physique complète en atelier, en croisant plusieurs procédés pour s'adapter aux différents matériaux :</p>
               <ul>
                 <li data-i18n-html="projectEolienne.methodManufItem1a"><strong>Tournage et Fraisage :</strong> usinage des axes principaux et des stubs de pales en acier (chariotage, rainurage pour circlips, dressage) et réalisation des méplats pour assurer le blocage en rotation des engrenages.</li>
-                <li data-i18n-html="projectEolienne.methodManufItem1b"><strong>Découpe Jet d'Eau :</strong> découpe de haute précision des disques de la base en aluminium.</li>
+                <li data-i18n-html="projectEolienne.methodManufItem1b"><strong>Découpe Jet d'Eau :</strong> découpe de haute précision des disques en acier du bâti.</li>
                 <li data-i18n-html="projectEolienne.methodManufItem1c"><strong>Impression 3D :</strong> fabrication des bras profilés et des engrenages coniques en PLA.</li>
               </ul>
             </div>
@@ -164,17 +171,17 @@
             <div>
               <p data-i18n="projectEolienne.methodTestText1">Le prototype final a été couplé à une génératrice et testé en soufflerie pour confronter les modèles théoriques à la réalité physique de l'écoulement.</p>
               <ul>
-                <li data-i18n-html="projectEolienne.methodTestItem1a"><strong>Validation des profils :</strong> les essais physiques ont confirmé les simulations CFD, la pale "16_4" surpassant les autres profils en maintenant un Cp plus élevé sur une large plage de fonctionnement.</li>
+                <li data-i18n-html="projectEolienne.methodTestItem1a"><strong>Validation des profils :</strong> les essais en soufflerie (réalisés en amont de la phase de prototypage des pales) ont confirmé les simulations CFD, la pale "16_4" surpassant les autres profils en maintenant un Cp plus élevé sur une large plage de fonctionnement.</li>
                 <li data-i18n-html="projectEolienne.methodTestItem1b"><strong>Analyse des écarts :</strong> les pertes mécaniques (liées aux frottements des roulements et de l'engrènement) ont été modélisées et estimées entre 15 et 20 % de la puissance fluide captée.</li>
-                <li data-i18n-html="projectEolienne.methodTestItem1c"><strong>Performance finale :</strong> à la vitesse nominale, l'arbre délivre une puissance mécanique de 12,25 W, validant ainsi avec succès le cahier des charges initial imposant une puissance supérieure à 10 W.</li>
+                <li data-i18n-html="projectEolienne.methodTestItem1c"><strong>Performance finale :</strong> à la vitesse nominale, l'arbre délivre une puissance mécanique de 12,7 W, validant ainsi avec succès le cahier des charges initial imposant une puissance supérieure à 10 W.</li>
               </ul>
             </div>
             <figure class="project-image-container">
-              <video class="content-image" controls preload="metadata" poster="images/prototype_final_poster.jpg">
+              <video class="content-image" controls preload="auto">
                 <source src="videos/soufflerie.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas la lecture de vidéos.
               </video>
-              <figcaption data-i18n="projectEolienne.captionTest">Test du prototype final en soufflerie et analyse comparative des performances réelles vs théoriques.</figcaption>
+              <figcaption data-i18n="projectEolienne.captionTest">Test du prototype final en soufflerie.</figcaption>
             </figure>
           </div>
         </div>
@@ -193,6 +200,47 @@
           <span data-i18n="projectEolienne.tag2">CAO</span>
           <span data-i18n="projectEolienne.tag3">Prototypage rapide</span>
           <span data-i18n="projectEolienne.tag4">Usinage</span>
+        </div>
+      </div>
+
+      <div class="content-block wide">
+        <h2 data-i18n="projectDrag.teamTitle">Équipe du projet</h2>
+        <div class="team-grid">
+          <a href="https://www.linkedin.com/in/ioglas-alves-da-fonseca/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/ioglas-alves_da_fonseca.jpeg" alt="Photo de Ioglas ALVES DA FONSECA">
+            <p class="team-name">Ioglas ALVES DA FONSECA</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/garance-baccarin-664948328/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/garance-baccarin.png" alt="Photo de Garance BACCARIN">
+            <p class="team-name">Garance BACCARIN</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/david-bouteiller-365824329/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/david-bouteiller.jpeg" alt="Photo de David BOUTEILLER">
+            <p class="team-name">David BOUTEILLER</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aubin-eychenne-a06719329/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/aubin-eychenne.jpg" alt="Photo de Aubin EYCHENNE">
+            <p class="team-name">Aubin EYCHENE</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mael-le-roy-a40176328/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/mael-le_roy.jpeg" alt="Photo de Mael LE ROY">
+            <p class="team-name">Mael LE ROY</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nicolas-nakache/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/nicolas-nakache.jpeg" alt="Nicolas NAKACHE">
+            <p class="team-name">Nicolas NAKACHE</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
+          <a href="https://www.linkedin.com/in/romain-tsang-chin-yee/" target="_blank" class="team-card">
+            <img class="team-avatar" src="images/romain-tsang_chin_yee.jpeg" alt="Photo de Romain TSANG CHIN YEE">
+            <p class="team-name">Romain TSANG CHIN YEE</p>
+            <span class="team-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</span>
+          </a>
         </div>
       </div>
 
@@ -222,7 +270,6 @@
     </div>
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/matteo-denis1" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/matteodenis59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
       <a href="mailto:matteo.denis@centrale.centralelille.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
