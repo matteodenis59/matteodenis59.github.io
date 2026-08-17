@@ -119,6 +119,7 @@ const translations = {
     projectEolienne: {
       title: "Conception et fabrication d'une éolienne tripale à axe vertical",
       meta: "École Centrale de Lille · Projet de 8 semaines · Septembre 2025 – Novembre 2025",
+      overviewText: "",
       reportLabel: "Voir les slides de la soutenance finale (PDF)",
       methodTitle: "Démarche",
       methodAeroTitle: "1. Modélisation aérodynamique",
